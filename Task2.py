@@ -5,6 +5,6 @@
 # If the password meets all of these criteria, print "Password accepted : True", 
 # otherwise print "Password accepted : False".
 
-UserPassword=input("Please enter your password")
+UserPassword=input("Please enter your password:")
 PasswordLenght=len(UserPassword)>=8
 print("Password accepted:"+str(PasswordLenght))
