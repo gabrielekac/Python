@@ -8,4 +8,5 @@
 
 year=int(input("Enter a year:"))
 result=year%4==0 and not year%100==0 or year%400==0
+
 print("Leap year:"+str(result))

@@ -4,7 +4,9 @@
 # "You are able to drive : True
 # If not, then
 # "You are able to drive : False
-UserAge=int(input('Please enter your age'))
+UserAge=int(input('Please enter your age:'))
 UserLicense=input('Do you have a driver license?')
+
 result=(UserAge >=18 and UserLicense=='yes')
+
 print("You are able to drive:"+str(result))

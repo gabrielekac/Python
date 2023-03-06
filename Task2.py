@@ -7,4 +7,5 @@
 
 UserPassword=input("Please enter your password:")
 PasswordLenght=len(UserPassword)>=8
+
 print("Password accepted:"+str(PasswordLenght))
