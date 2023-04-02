@@ -4,7 +4,7 @@
 # Date interval From 01.01.0000 till 31.12.9999
 
 import datetime
-Date = input("Enter the date in format: day, month, year : ")
+Date = input("Enter the date: day, month, year : ")
 day, month, year = Date.split(",")
 isValidDate = True
 try:
@@ -12,6 +12,7 @@ try:
 except ValueError:
     isValidDate = False
 
+    
 if(isValidDate):
     print("Date valid : True")
 else:
