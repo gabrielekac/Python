@@ -45,5 +45,5 @@ class Truck(Vehicle):
 
 
 truck = Truck('Volvo', 'FH16', 2013, 500)
-# print(truck.get_info())
+
 car = Car('Toyota', 'Yaris', 2015, 4)
