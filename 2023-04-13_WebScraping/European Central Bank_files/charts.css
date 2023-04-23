@@ -1,0 +1,233 @@
+#chart-container {
+  position: relative;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+#chart-container .ecb-tableHolder {
+  overflow: scroll;
+  height: 700px;
+  width: 100%;
+  display: none;
+}
+
+#chart-container .loading {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 190px;
+}
+
+#chart-container #chart-canvas {
+  float: left;
+  width: 100%;
+  margin-left: -10px;
+}
+
+#chart-container .header h4 {
+  margin-top: 0;
+  line-height: 1.36em;
+}
+
+/*#chart-container #chart-canvas > div {
+    margin-right: 200px;
+}*/
+/*#chart-container #chart-canvas.no-legend div {
+    margin-right: 0;
+}*/
+#chart-container .amChartsInputField {
+  padding: 0 2px 0 2px;
+  border-radius: 3px;
+}
+
+#chart-container .amChartsPeriodSelector > div:nth-of-type(2) {
+  margin-right: 72px;
+}
+
+#chart-container .chart-legend,
+#chart-container ul,
+#chart-container .ecb-tabNavs,
+#chart-container .ecb-tabNavs li {
+  list-style-type: none;
+}
+
+#chart-container .chart-legend > li:last-of-type,
+.amExportButton li {
+  margin-bottom: 0;
+}
+
+#chart-container .chart-legend {
+  position: relative;
+  background-color: #eeeeee;
+  bottom: 0;
+  right: 0;
+  padding: 25px 25px 0 25px;
+  width: 100%;
+  -webkit-column-width: 200px;
+  -moz-column-width: 200px;
+  column-width: 200px;
+}
+
+#chart-container .chart-legend > li.double-level {
+  display: inline-block;
+}
+
+#chart-container .chart-legend label input {
+  margin-right: 6px;
+}
+
+#chart-container .ecb-tabNavs:first-child ul {
+  padding-left: 0;
+}
+
+#chart-container .ecb-tabNavs ul {
+  margin-top: 0;
+}
+
+#chart-container .ecb-tabNavs,
+.ecb-tabNavs li {
+  display: inline-block;
+}
+
+#chart-container .ecb-tabNavs span {
+  color: #328dd2;
+}
+
+#chart-container .ecb-tabNavs span:hover {
+  color: #00528c;
+  text-decoration: underline;
+}
+
+#chart-container .ecb-tabNavs span.active {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#chart-container .ecb-tabNavs span.active:hover {
+  color: #328dd2;
+}
+
+#chart-container .ecb-tabNavs li:nth-of-type(n+2):before {
+  content: "|";
+  margin: 5px;
+}
+
+#chart-container .ecb-tabNavs:nth-child(n+2) {
+  margin-left: 24px;
+}
+
+#chart-container .ecb-tabContainer > div:last-of-type {
+  float: right;
+}
+
+#chart-container .ecb-contentTable {
+  margin: 0 auto;
+}
+
+#chart-container .ecb-contentTable td {
+  white-space: nowrap;
+  font-size: x-small;
+}
+
+#chart-container .amChartsPeriodSelector > div,
+#chart-container .amChartsDataSetSelector {
+  margin: 12px 0;
+  font-size: 1em;
+}
+
+#chart-container .amChartsPeriodSelector > div input,
+#chart-container .amChartsDataSetSelector select {
+  text-transform: none;
+  font-size: 1em;
+}
+
+#min-max-avg-data {
+  font-size: smaller;
+}
+
+#chart-container #min-max-avg-data #map-start-date,
+#chart-container #min-max-avg-data #map-end-date {
+  font-weight: bold;
+}
+
+#chart-container input[type=button],
+#chart-container .amChartsDataSetSelector select {
+  margin: 1px;
+  padding: 0 3px 0 3px;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 640px) {
+  #chart-container #map-min-max-avg span {
+    display: inline;
+  }
+
+  #chart-container #map-min-max-avg span:nth-of-type(n+2):before {
+    content: "|";
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  #chart-container #map-min-max-avg span {
+    display: block;
+  }
+
+  #chart-container #map-min-max-avg span:nth-of-type(n+2):before {
+    content: "";
+  }
+
+  #chart-container .ecb-tabNavs:nth-child(n+2) {
+    margin-left: 0;
+  }
+
+  #chart-container .ecb-tabNavs {
+    display: block;
+  }
+}
+.ecb-inflationData {
+  width: 100%;
+  margin-bottom: 7px;
+  display: flex;
+}
+
+.ecb-inflationData div.item-container {
+  width: calc(33% - 4px);
+  margin: 0;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 3px 0;
+}
+
+div.item-container:last-child {
+  margin-right: 0px;
+}
+
+.ecb-inflationData div.item-container:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.ecb-inflationData div.item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+.ecb-inflationData span.ecb-small {
+  font-size: 9px;
+}
+
+#chart-container g > text {
+  fill: rgba(255, 255, 255, 0.4);
+}
+
+/*# sourceMappingURL=charts.css.map */
